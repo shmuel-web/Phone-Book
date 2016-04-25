@@ -1,0 +1,152 @@
+//todo improve css and design
+
+html{
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+  //-webkit-animation-duration: 0.01ms;
+  //-webkit-animation-delay: 2s;
+  //-webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: .65s !important;
+  animation-duration: .65s !important;
+
+}
+
+//a fix in the for the css framework
+.collection .collection-item.avatar {
+  min-height: 63px;
+}
+
+.collection{
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+
+.flip{
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  -ms-filter: "FlipH";
+}
+
+nav form {
+  //todo make the search bar span the hole width
+  height: 64px;
+  display: inline-block;
+}
+
+.item-main{
+  display: inline-block;
+  min-height:1rem;
+  width: 100%;
+  padding: 2rem 10px 2rem 2rem;
+  .item-view{
+    float: left;
+    width: 100%;
+  }
+  i{
+    float: left;
+  }
+
+  #title{
+    float: left;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    &:focus{
+      outline: none;
+      box-shadow: 0 2px 0 0 #26a69a;
+    }
+    div{
+      font-size: 1.3rem;
+    }
+  }
+  .item-btnz{
+    display: inline-block;
+    float: right;
+    width:40px;
+    .btn-flat{
+      padding: 0 10px;
+      border-radius: 50%;
+    }
+  }
+}
+.collection-item{
+  input{
+    width:calc(100% - 40px);
+  }
+  .secondary-content{
+    cursor: pointer;
+  }
+  .number-btnz{
+    display: inline-block;
+    float: right;
+    width:25px;
+    margin-top: 7px;
+    font-size: 1rem;
+    .material-icons{
+      font-size: 1.3rem;
+    }
+    .btn-flat{
+      padding: 0 10px;
+      border-radius: 50%;
+    }
+  }
+  span{
+    padding-bottom: 5px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+    &:focus{
+      outline: none;
+      box-shadow: 0 2px 0 0 #26a69a;
+    }
+  }
+}
+
+.responsive-fab{
+  bottom: 6%;
+}
+
+@media (max-width: 600px){
+  .dynamic-padding{
+    padding: 0 1%;
+  }
+  .responsive-fab{
+
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px){
+  .dynamic-padding{
+    padding: 0 13%;
+  }
+  .responsive-fab{
+    right: 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dynamic-padding{
+    padding: 0 20%;
+  }
+  .responsive-fab{
+    right: 22%;
+
+  }
+}

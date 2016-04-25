@@ -1,0 +1,110 @@
+html {
+  overflow-x: hidden; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+main {
+  flex: 1 0 auto;
+  -webkit-animation-duration: .65s !important;
+  animation-duration: .65s !important; }
+
+.collection .collection-item.avatar {
+  min-height: 63px; }
+
+.collection {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.flip {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  -ms-filter: "FlipH"; }
+
+nav form {
+  height: 64px;
+  display: inline-block; }
+
+.item-main {
+  display: inline-block;
+  min-height: 1rem;
+  width: 100%;
+  padding: 2rem 10px 2rem 2rem; }
+  .item-main .item-view {
+    float: left;
+    width: 100%; }
+  .item-main i {
+    float: left; }
+  .item-main #title {
+    float: left;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial; }
+    .item-main #title:focus {
+      outline: none;
+      box-shadow: 0 2px 0 0 #26a69a; }
+    .item-main #title div {
+      font-size: 1.3rem; }
+  .item-main .item-btnz {
+    display: inline-block;
+    float: right;
+    width: 40px; }
+    .item-main .item-btnz .btn-flat {
+      padding: 0 10px;
+      border-radius: 50%; }
+
+.collection-item input {
+  width: calc(100% - 40px); }
+
+.collection-item .secondary-content {
+  cursor: pointer; }
+
+.collection-item .number-btnz {
+  display: inline-block;
+  float: right;
+  width: 25px;
+  margin-top: 7px;
+  font-size: 1rem; }
+  .collection-item .number-btnz .material-icons {
+    font-size: 1.3rem; }
+  .collection-item .number-btnz .btn-flat {
+    padding: 0 10px;
+    border-radius: 50%; }
+
+.collection-item span {
+  padding-bottom: 5px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: initial;
+  transition-delay: initial; }
+  .collection-item span:focus {
+    outline: none;
+    box-shadow: 0 2px 0 0 #26a69a; }
+
+.responsive-fab {
+  bottom: 6%; }
+
+@media (max-width: 600px) {
+  .dynamic-padding {
+    padding: 0 1%; } }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .dynamic-padding {
+    padding: 0 13%; }
+  .responsive-fab {
+    right: 15%; } }
+
+@media (min-width: 1200px) {
+  .dynamic-padding {
+    padding: 0 20%; }
+  .responsive-fab {
+    right: 22%; } }
